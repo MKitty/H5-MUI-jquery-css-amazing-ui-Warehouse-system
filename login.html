@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>登录</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link href="AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="css/public.css" type="text/css">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <script src="AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="login-bg"></div>
+<form action="" class="am-form" id="form-with-tooltip">
+    <fieldset>
+        <div class="am-form-group my-form-group clearfix">
+            <label for="doc-vld-name-2-0" class="fl"><i class="am-icon-user  icon-user"></i></label>
+            <input type="text" id="doc-vld-name-2-0" class="login-input fl" minlength="3"
+                   placeholder="输入用户名（至少 3 个字符）" required/>
+        </div>
+
+        <div class="am-form-group my-form-group clearfix">
+            <label for="doc-vld-pwd-1-0" class="fl"><i class="am-icon-user icon-user"></i></label>
+            <input type="password" id="doc-vld-pwd-1-0" class="login-input fl" placeholder="请输入密码" pattern="^\d{6}$" required data-foolish-msg="把 IQ 卡密码交出来！"/>
+        </div>
+        <div class="longin-waring"><a href="#">忘记密码</a> | <a href="#">注册账号</a></div>
+
+        <button class="am-btn am-btn-secondary longin-btn" type="submit">登录</button>
+    </fieldset>
+</form>
+<script>
+</script>
+</body>
+</html>

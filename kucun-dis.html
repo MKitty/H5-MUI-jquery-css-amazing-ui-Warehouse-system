@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>库存与产品</title>
+    <link rel="stylesheet" href="css/top-search.css" type="text/css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link href="AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="css/public.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/chuk-amount.css">
+    <script src="AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="search">
+    <span class="iconfont icon-xiala"></span>
+    <form action="" class="wj-search-form-input">
+        <div class="search-box">
+            <div class="saerch-icon"><img src="images/search-icon.png" alt=""></div>
+            <input type="text" placeholder="搜索商品">
+        </div>
+    </form>
+</div>
+<div class="container mt40 cont-colore">
+    <div data-am-widget="tabs" class="am-tabs am-tabs-d2 tab-box">
+        <ul class="am-tabs-nav am-cf tab-title">
+            <li class="am-active"><a href="[data-tab-panel-0]">库存详情</a></li>
+            <li class=""><a href="[data-tab-panel-1]">产品详情</a></li>
+        </ul>
+        <div class="am-tabs-bd bgfff mt10">
+            <div data-tab-panel-0 class="am-tab-panel am-active" style="padding: 0">
+                <div id="myCarousel" class="carousel slide mb10">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/shangping-dic.png" class="img-responsive img-size" alt="First slide">
+                        </div>
+                        <div class="item">
+                            <img src="images/shangping-dic.png" class="img-responsive img-size" alt="Second slide">
+                        </div>
+                    </div>
+                </div>
+                <div class="bgeee h10"></div>
+                <table class="am-table ck-dis bgfff">
+                    <tbody class="ck-list text-left">
+                    <tr>
+                        <td><i class="line"></i> 品名：单人座沙发</td>
+                        <td><i class="line"></i>货号：47398439</td>
+                    </tr>
+                    <tr>
+                        <td><i class="line"></i> 总库存：559</td>
+                        <td><i class="line"></i>物料总库：4345</td>
+                    </tr>
+                    <tr>
+                        <td><i class="line"></i> 总部仓库：12344</td>
+                        <td><i class="line"></i>销售一部仓库：473</td>
+                    </tr>
+                    <tr>
+                        <td><i class="line"></i> 销售二部仓库：46</td>
+                        <td><i class="line"></i>销售三部仓库：59</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div data-tab-panel-1 class="am-tab-panel ">
+                <div id="myCarousel1" class="carousel slide mb10">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/shangping-dic.png" class="img-responsive img-size" alt="First slide">
+                        </div>
+                        <div class="item">
+                            <img src="images/shangping-dic.png" class="img-responsive img-size" alt="Second slide">
+                        </div>
+                    </div>
+                </div>
+                <div class="bgeee h10"></div>
+                <table class="am-table ck-dis bgfff">
+                    <tbody class="ck-list text-left">
+                    <tr>
+                        <td><i class="line"></i> 品名：单人座沙发</td>
+                        <td><i class="line"></i>价格：540（元）</td>
+                    </tr>
+                    <tr>
+                        <td><i class="line"></i> 品牌：红苹果</td>
+                        <td><i class="line"></i>类别：家居</td>
+                    </tr>
+                    <tr>
+                        <td><i class="line"></i> 供应商：王明</td>
+                        <td><i class="line"></i>进货价：584（元）</td>
+                    </tr>
+                    <tr>
+                        <td><i class="line"></i> 销售二部仓库：46</td>
+                        <td><i class="line"></i>销售三部仓库：59</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="am-g boot-footer">
+    <div class="am-u-sm-3">
+        <a href="#" class="footer-active">
+            <i class="iconfont icon-home"></i>
+            <span>首页</span>
+        </a>
+    </div>
+    <div class="am-u-sm-3">
+        <a href="#">
+            <i class="iconfont icon-storage"></i>
+            <span>仓库管理</span>
+        </a>
+    </div>
+    <div class="am-u-sm-3 ">
+        <a href="#">
+            <i class="iconfont icon-stock"></i>
+            <span>库存</span>
+        </a>
+    </div>
+    <div class="am-u-sm-3">
+        <a href="#">
+            <i class="iconfont icon-gerenzhongxin"></i>
+            <span>个人中心</span>
+        </a>
+    </div>
+</div>
+<script>
+</script>
+</body>
+</html>

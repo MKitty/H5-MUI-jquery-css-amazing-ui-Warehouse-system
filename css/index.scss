@@ -1,0 +1,123 @@
+@import "public";
+.mg{
+  margin: 8px 0 8px 10px;
+}
+.home-infor {
+  display: flex;
+  background: #e9e9e9;
+  padding: 5px 10px;
+  align-items: center;
+
+  .icon-laba001hover:before{
+    color:$main-color;
+    font-size: 18px;
+  }
+  .info-auto {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0.8rem;
+    color:$color-666;
+    font-size: 13px;
+  }
+}
+.ruku-list{
+  li{
+    a{
+      .wz{
+        color: $color-333;
+        margin-top: 5px;
+      }
+      .iconfont-bg{
+        border-radius: 50%;
+        width:40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 auto;
+        i{
+          color: #FFFFFF;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  background: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+}
+.new-ruku{
+  .kc-title{
+    display: flex;
+    padding: 0px 8px;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 4px solid $main-color;
+    @extend .mg;
+    .icon-huanyipi{
+      color:$main-color;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  .am-panel-group{
+    margin-bottom: 1.5rem;
+  }
+  .new-list{
+    background: #FFFFFF;
+    padding:8px 10px;
+    .new-title{
+      display: inline-block;
+      background:$color-aid-color;
+      color: #FFFFFF;
+      padding: 2px 8px;
+      transform:skewX(-30deg);
+      span{
+        transform:skewX(30deg);
+        display: inline-block;
+      }
+    }
+    .new-box{
+      display: flex;
+      .img-box{
+        width: 80px;
+        border: 1px solid $main-color;
+        padding: 5px;
+        margin-right: 12px;
+        img{
+          width: 100%;
+        }
+      }
+      .sp-infor{
+        display: flex;
+        font-size: 12px;
+        line-height: 1.6;
+        ul{
+          padding: 0;
+          li{
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+          }
+        }
+        ul:nth-child(2){
+          color: $color-999;
+        }
+
+      }
+
+    }
+  }
+  .icon-arrow-up{
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    background: #d1d1d1;
+    color: #FFFFFF;
+    border-radius: 50%;
+    bottom:-34px;
+    z-index: 999;
+
+  }
+  .icon-arrow-up.open:before{
+    content:"\e822";
+  }
+}

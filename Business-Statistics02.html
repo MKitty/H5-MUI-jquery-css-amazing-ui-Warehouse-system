@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>业务统计</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link href="AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="css/public.css" type="text/css">
+    <link rel="stylesheet" href="css/top-search.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <link rel="stylesheet" href="css/record.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <script src="AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/echarts.common.min.js"></script>
+    <style>
+        .am-datepicker td.am-datepicker-day{
+            line-height: 34px;
+        }
+        .am-datepicker td{
+            font-size: 1rem;
+        }
+
+        .am-datepicker .am-datepicker-dow{
+            color: #ff9933;
+        }
+        .am-datepicker tr.am-datepicker-header{
+            background:#ff9933 ;
+        }
+    </style>
+</head>
+<body>
+<header class="am-header">
+    <span class="iconfont icon-xiala fl"></span>
+    <h1 class="am-titlebar-title fl">业务统计</h1>
+</header>
+
+<div class="am-container plr0 bgfff mt44">
+    <div class="object-tabs" data-am-tabs="{noSwipe: 1}" id="doc-tab-demo-1">
+        <ul class="object-nav-tabs">
+            <li><a href="Business-Statistics01.html">订单统计</a></li>
+            <li><a href="cjl.html">成交量统计</a></li>
+            <li class="active"><a href="Business-Statistics02.html">客户统计</a></li>
+        </ul>
+
+        <div class="object-tabs-bd">
+            <div class="active object-tab-panel">
+                <div class="object-tabs-cont am-g">
+                    <span class="am-u-sm-2 plr0">日期</span>
+                    <div class="am-input-group am-datepicker-date am-u-sm-4 plr0 date-input ml-28" data-am-datepicker="{format: 'yyyy-mm-dd'}">
+                        <input type="text" class="am-form-field" readonly>
+                        <span class="am-input-group-btn am-datepicker-add-on">
+                        <button class="am-btn am-btn-default" type="button">
+                            <span class="am-icon-calendar business-calender"></span>
+                        </button>
+                    </span>
+
+                    </div>
+                    <span class="am-u-sm-1 text-center plr0">—</span>
+                    <div class="am-input-group am-datepicker-date am-u-sm-4 plr0 date-input" data-am-datepicker="{format: 'yyyy-mm-dd'}">
+                        <input type="text" class="am-form-field" readonly>
+                        <span class="am-input-group-btn am-datepicker-add-on">
+                            <button class="am-btn am-btn-default" type="button">
+                                <span class="am-icon-calendar business-calender"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+                <div id="main" style="width: 100%;height:400px;"></div>
+                <script>
+                    // 绘制图表。
+                    var myChart = echarts.init(document.getElementById('main'));
+                    option = {
+                        tooltip: {
+                            trigger: 'item',
+                            formatter: "{a} <br/>{b}: {c} ({d}%)"
+                        },
+                        legend: {
+                            orient: 'vertical',
+                            x: 'left',
+                            data:['意向客户','初步订单','合作客户']
+                        },
+                        series: [
+                            {
+                                name:'访问来源',
+                                type:'pie',
+                                radius: ['50%', '70%'],
+                                avoidLabelOverlap: false,
+                                label: {
+                                    normal: {
+                                        show: false,
+                                        position: 'center'
+                                    },
+                                    emphasis: {
+                                        show: true,
+                                        textStyle: {
+                                            fontSize: '30',
+                                            fontWeight: 'bold'
+                                        }
+                                    }
+                                },
+                                labelLine: {
+                                    normal: {
+                                        show: false
+                                    }
+                                },
+                                data:[
+
+                                    {value:335, name:'意向客户'},
+                                    {value:310, name:'初步订单'},
+                                    {value:234, name:'合作客户'},
+                                ]
+                            }
+                        ]
+                    };
+                    myChart.setOption(option);
+
+                    /*   });*/
+                </script>
+                <div class="business-list plr10">
+                    <h1 class="business-title">客户情况</h1>
+                    <ul>
+                        <li>
+                            <div class="business-list-left"><span class="legend coler02"></span><span class="legen-dis">意向客户</span></div>
+                            <div>43758.00(元)</div>
+                        </li>
+                        <li>
+
+                            <div class="business-list-left"><span class="legend coler03"></span><span class="legen-dis">初步订单</span></div>
+                            <div>43758(单)</div>
+
+                        </li>
+                        <li>
+
+                            <div class="business-list-left"><span class="legend coler04"></span><span class="legen-dis">合作客户</span></div>
+                            <div>43758(位)</div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

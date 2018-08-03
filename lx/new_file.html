@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<title></title>
+		<style>
+			 /*限时秒杀样式*/
+			.seckill-time{
+				display: inline-block;
+			}
+			.seckill-time .time input{
+				display: inline-block;
+				float: left;
+				width: 22px;
+				line-height: 18px;
+				color: #232326;
+				font-size: 14px;
+				height: 18px;
+				text-align: center;
+				border: 1px solid #999999;
+				border-radius: 3px;
+			}
+			.seckill-time-separator{
+				float: left;
+				display: inline-block;
+				line-height: 16px;
+				height: 16px;
+				text-align: center;
+				color: #232326;
+				margin: 0 5px;
+			}
+			/*限时秒杀样式结束*/
+			
+			/*查看更多样式*/
+			.more a{
+				color: #666666;
+				text-decoration: none;
+				font-size: 12px;
+			}
+			.more a .arrow {
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				padding: 2px;
+				line-height: 10px;
+				text-align: center;
+				 border: 1px solid #999999;
+				border-radius: 50%;
+				margin-left: 10px;
+			}
+			/*查看更多样式结束*/
+			.no-more{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 5px;
+			}
+			
+			.no-more .no-more-line{
+				width: 34px;
+				height: 1px;
+				background-color: #434343;
+				
+			}
+			.no-more .no-more-wz{
+				margin: 0 15px;
+				color: #666666;
+			}
+			.home-list-title{
+				width: 184px;
+				margin: 0 auto;
+			}
+		
+			.loading-img{
+				width: 100px;
+				margin: 0 auto;
+			}
+			.loading-img img,.home-list-title img{
+				width: 100%;
+			}
+		
+		</style>
+	</head>
+	<body>
+			<div class="seckill-time">
+				<label class="time">
+					<input type="text" name="lastname" value="00">
+				</label>
+				<span class="seckill-time-separator">:</span>
+				<label class="time">
+					<input type="text" name="lastname" value="28">
+				</label>
+				<span class="seckill-time-separator">:</span>
+				<label class="time">
+					<input type="text" name="lastname" value="43">
+				</label>
+				
+			</div>
+			
+			<div class="more">
+				<a href="#">查看全部<span class="arrow">></span></a>
+			</div>
+			
+			<div class="no-more">
+				<div class="no-more-line"></div>
+				<div class="no-more-wz">没有更多了 </div>
+				<div class="no-more-line"></div>
+			</div>
+			<div class="home-list-title">
+				<img src="images/home-like-title.png" alt="猜你喜欢" />
+			</div>
+			<div class="loading-logo">
+				<div class="loading-img">
+					<img src="images/loading.png" alt="加载更多" />
+				</div>
+</div>
+	</body>
+</html>

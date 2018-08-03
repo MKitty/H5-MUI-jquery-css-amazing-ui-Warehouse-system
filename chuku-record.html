@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>出库录单</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link href="AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="css/top-search.css">
+    <link rel="stylesheet" href="css/public.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <link rel="stylesheet" href="css/record.css" type="text/css">
+    <script src="AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="am-header">
+    <span class="iconfont icon-xiala fl"></span>
+    <h1 class="am-titlebar-title fl">出库录单</h1>
+</header>
+<div class="container mt44">
+    <form>
+        <div class="form-group row form-list mt15">
+            <label  class="col-xs-3 plr0">单据日期</label>
+            <input type="text" class="col-xs-8 plr0" placeholder="2017-02-09" >
+        </div>
+        <div class="form-group row form-list">
+            <label class="col-xs-3 plr0">单据编号</label>
+            <input type="text" class="col-xs-8 plr0" >
+            <a  href="saoyisao.html"><img src="images/saoyisao.png" alt=""></a>
+        </div>
+        <div class="form-group row form-list">
+            <label class="col-xs-3 plr0">仓库</label>
+                <div class="select-box">
+                <select>
+                    <option value="a">界石仓库</option>
+                    <option value="b">长寿仓库01</option>
+                    <option value="o">长寿仓库02</option>
+                    <option value="m">长寿仓库03</option>
+                </select>
+                </div>
+        </div>
+        <div class="form-group row form-list">
+            <label class="col-xs-3 plr0">经办人</label>
+            <input type="text" class="col-xs-8 plr0" >
+        </div>
+        <div class="form-group row form-list">
+            <label class="col-xs-3 plr0">类别</label>
+            <div class="select-box">
+                <select>
+                    <option value="a">厨房用品类</option>
+                    <option value="b">家居日用类</option>
+                    <option value="o">收纳清洁类</option>
+                    <option value="m">床上被套类</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group form-textarea mt15">
+            <label class="mb10">备注</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+    </form>
+</div>
+<div class="btn">
+    <button>创建出库录单</button>
+</div>
+<script>
+</script>
+</body>
+</html>

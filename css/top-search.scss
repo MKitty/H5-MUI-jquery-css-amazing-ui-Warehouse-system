@@ -1,0 +1,92 @@
+@import "public";
+.btn-box {display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px}
+.btn-box .btn{
+  width: 40%;
+  line-height: 2;
+  border-radius: 5px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #e50080;
+}
+body{
+  margin: 0;
+}
+.search{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1099;
+  margin: 0 auto;
+  display: flex;
+  background: #28344a;
+  line-height: 0;
+  height: 44px;
+  .icon-xiala{
+    align-self: center;
+    transform:rotate(90deg);
+    font-size: 34px;
+    color: #FFFFFF;
+  }
+}
+
+.search .wj-search-form-input{
+  width: 66%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-right: 35px
+}
+.search .search-box .saerch-icon{
+  width: 22px;
+  margin-bottom: 2px;
+}
+.search .search-box{
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  display: flex;
+  padding: 4px 5px;
+
+}
+.search .search-box .saerch-icon img{
+  width: 100%;
+  vertical-align: middle;
+}
+.search .search-box{
+  background: #FFFFFF;
+  margin: 5px 0;
+}
+.search .search-box input{
+  border: none;
+  width: 100%;
+  margin-left: 5px;
+  outline: none;
+}
+
+.am-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1099;
+  margin: 0 auto;
+  display: flex;
+  background: #28344a;
+  line-height: 0;
+  height: 44px;
+  span{
+    font-size: 34px;
+    align-self: center;
+    transform: rotate(90deg);
+    color: #FFFFFF
+  }
+  h1{
+    color: #FFFFFF;
+    line-height: 44px;
+    margin: 0 auto;
+    padding-right: 34px;
+    font-size: 18px;
+  }
+}

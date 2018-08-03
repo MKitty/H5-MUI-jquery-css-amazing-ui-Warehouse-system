@@ -1,0 +1,34 @@
+@import "public";
+.boot-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  background: #FFFFFF;
+  div{
+    padding-left: 0;
+    padding-right: 0;
+
+  a{
+    color: $color-999;
+    span{
+      display: block;
+      text-align: center;
+      font-size: 12px;
+
+      line-height:1;
+      padding: 4px 1px;
+    }
+    i{
+      display: block;
+      text-align: center;
+      font-size: 22px;
+      line-height:1;
+      padding: 4px 0 2px 0;
+    }
+  }
+  .footer-active{
+    color: $main-color;
+  }
+}
+}
